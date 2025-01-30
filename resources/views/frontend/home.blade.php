@@ -13,6 +13,10 @@
                         <a href="#contact" class="btn hire-me">Hire Me</a>
 
                         <div class="social-links">
+                            <a href="https://facebook.com/brishashrestha12" target="_blank" class="social-link">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+
                             <a href="https://instagram.com/YourInstagram" target="_blank" class="social-link">
                                 <i class="fab fa-instagram"></i>
                             </a>
