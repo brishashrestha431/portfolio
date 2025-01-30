@@ -18,4 +18,11 @@ class PortfolioController extends Controller
     public function contact(){
         return view('frontend.contact');
     }
+    public function show(){
+        return view('frontend.contact');
+    }
+    public function submit(){
+        return view('frontend.contact');
+    }
+
 }

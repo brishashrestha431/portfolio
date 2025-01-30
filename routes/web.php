@@ -20,4 +20,5 @@ Route::get('/about', [PortfolioController::class, 'about'])->name('about');
 
 Route::get('/skills', [PortfolioController::class, 'skills'])->name('skills');
 
-Route::get('/contact', [PortfolioController::class, 'contact'])->name('contact');
+Route::get('/contact', [PortfolioController::class, 'show'])->name('contact');
+Route::post('/contact', [PortfolioController::class, 'submit'])->name('contact');

@@ -1,26 +1,47 @@
-<div class="container my-5">
-    <h1 class="section-title text-center">Skills</h1>
-    <div class="row">
-        <div class="col-md-4" data-aos="fade-up">
-            <div class="skill-card text-center p-4 shadow">
-                <i class="fab fa-html5 fa-3x text-primary mb-3"></i>
-                <h3>HTML/CSS</h3>
-                <p>Proficient in creating responsive and modern web designs.</p>
+@extends('main')
+
+@section('content')
+<section class="skills section">
+    <div class="container">
+        <div class="row">
+            <div class="section-title padd-15">
+                <h2>My Skills</h2>
             </div>
         </div>
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="skill-card text-center p-4 shadow">
-                <i class="fab fa-js-square fa-3x text-warning mb-3"></i>
-                <h3>JavaScript</h3>
-                <p>Experience in building interactive web applications.</p>
-            </div>
-        </div>
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="skill-card text-center p-4 shadow">
-                <i class="fab fa-php fa-3x text-info mb-3"></i>
-                <h3>PHP & Laravel</h3>
-                <p>Learning backend development with Laravel.</p>
+        <div class="row">
+            <div class="skills-content padd-15">
+                <div class="skill-item">
+                    <h4>HTML</h4>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;">90%</div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h4>CSS</h4>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;">80%</div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h4>JavaScript</h4>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%;">70%</div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h4>PHP</h4>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%;">85%</div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h4>Laravel</h4>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;">80%</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
+</section>
+@endsection

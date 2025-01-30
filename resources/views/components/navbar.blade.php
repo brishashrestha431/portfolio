@@ -1,24 +1,37 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-        <a class="navbar-brand" href="/">Brisha Shrestha</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="/">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/skills">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/contact">Contact</a>
-                </li>
-            </ul>
+<div class="main-container">
+    <div class="aside">
+        <div class="logo">
+            <a href="#"> <span></span></a>
         </div>
     </div>
-</nav>
+</div>
+
+
+<div class="nav-toggler">
+    <span></span>
+</div>
+
+
+<ul class="nav">
+    <li>
+        <a href="{{ route('home') }}" class="{{ Request::is('/') ? 'active' : '' }}">
+            <i class="fa fa-home"></i> Home
+        </a>
+    </li>
+    <li>
+        <a href="{{ route('about') }}" class="{{ Request::is('about') ? 'active' : '' }}">
+            <i class="fa fa-user"></i> About
+        </a>
+    </li>
+    <li>
+        <a href="{{ route('skills') }}" class="{{ Request::is('skills') ? 'active' : '' }}">
+            <i class="fa fa-list"></i> Skills
+        </a>
+    </li>
+    <li>
+        <a href="{{ route('contact') }}" class="{{ Request::is('contact') ? 'active' : '' }}">
+            <i class="fa fa-comments"></i> Contact
+        </a>
+    </li>
+</ul>
+
